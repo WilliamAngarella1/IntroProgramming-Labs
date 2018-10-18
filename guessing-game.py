@@ -10,7 +10,19 @@ def main():
 
         if guess.lower()== answer:
             print ("Wow! You are correct! Great job!")
-        elif guess.lower()=="quit":
+            print("")
+            
+            userLike=input("Do you like that animal? y/n?")
+            if userLike.lower()=="y":
+                print("Good to know! Thanks for playing!")
+                break
+            elif userLike.lower()=="n":
+                print("That's too bad!")
+                break
+            else:
+                print("Thanks for playing!")
+            
+        elif guess.lower()[0]=="q":
             print ("Now exiting, thanks for playing!")
             break
         else:
