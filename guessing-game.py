@@ -10,6 +10,9 @@ def main():
 
         if guess.lower()== answer:
             print ("Wow! You are correct! Great job!")
+        elif guess.lower()=="quit":
+            print ("Now exiting, thanks for playing!")
+            break
         else:
             print ("Incorrect, try again!")
         
