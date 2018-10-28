@@ -4,9 +4,12 @@
 ###
 def getinput():
     global num1, num2
-    num1 = int(input("Enter the first number: "))
-    num2 = int(input("Enter the second number: "))
-
+    try:    
+        num1 = int(input("Enter the first number: "))
+        num2 = int(input("Enter the second number: "))
+    except ValueError:
+        print("That isn't a number!")
+        
 def showIntro():
     print("Welcome to the Arithmetic Engine!")
     print("=================================\n")
